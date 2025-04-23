@@ -14,4 +14,4 @@ years_experience = st.number_input("Masukkan Masa Dinas:", min_value=0.0, step=0
 #Prediksi gaji
 if st.button("Prediksi Gaji"):
    gaji = lin_reg_loaded.predict([[years_experience]])
-   st.write(f"Gaji seseorang dengan masa dinas {years_experience} tahun adalah ${salary[0]:,.2f}")
+   st.write(f"Gaji seseorang dengan masa dinas {years_experience} tahun adalah ${gaji[0]:,.2f}")
